@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas 01</title>
+</head>
+<body>
+	<canvas id="tutorial" width="150" height="150">
+		
+	</canvas>
+	<script type="text/javascript">
+		var canvas=document.getElementById('tutorial')
+		if (canvas.getContext){
+			var ctx=canvas.getContext('2d');
+			//aqui dibujo lo que me falta
+			ctx.fillRect(10,10,100,100);
+			ctx.clearRect(30,30,60,60);
+			ctx.strokeRect(35,35,50,50);
+		}
+		else{
+			alert('tu navegador no soporta canvas')
+		}
+	</script>
+</body>
+</html>
